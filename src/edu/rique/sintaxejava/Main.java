@@ -2,13 +2,19 @@ package edu.rique.sintaxejava;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
-    System.out.println(1 + 2 * 2.1);
-    System.out.println(fullName("Henrique", "2"));
+    SmartTv smartTv = new SmartTv();
 
-  }
+    System.out.println(smartTv.turn);
+    smartTv.turnOn();
+    System.out.println(smartTv.turn);
 
-  public static String fullName(String firstName, String lastName) {
-    return firstName + ' ' + lastName;
+    System.out.println(smartTv.volume);
+    smartTv.increaseVolume();
+    smartTv.increaseVolume();
+    System.out.println(smartTv.volume);
+
+    System.out.println(smartTv.channel);
+    smartTv.changeChannel(30);
+    System.out.println(smartTv.channel);
   }
 }
